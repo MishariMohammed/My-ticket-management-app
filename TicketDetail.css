@@ -1,0 +1,280 @@
+.ticket-detail-container {
+  background: white;
+  max-width: 1000px;
+  margin: 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(34, 197, 94, 0.15);
+  overflow: hidden;
+}
+
+.detail-header {
+  background: linear-gradient(135deg, var(--green-600) 0%, var(--green-500) 100%);
+  color: white;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.detail-title h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.detail-category {
+  padding: 6px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  text-transform: capitalize;
+}
+
+.detail-status {
+  padding: 6px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.detail-status.open {
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.detail-status.closed {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.detail-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn-action {
+  padding: 10px 18px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.btn-action:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.detail-content {
+  padding: 30px;
+}
+
+.info-section {
+  background: linear-gradient(135deg, var(--green-50) 0%, white 100%);
+  border: 2px solid var(--green-100);
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.info-item {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid var(--green-100);
+}
+
+.info-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--green-700);
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-value {
+  color: var(--green-900);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.customer-section {
+  background: var(--green-50);
+  border: 2px solid var(--green-100);
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.customer-section h3 {
+  color: var(--green-800);
+  margin: 0 0 20px 0;
+  font-size: 20px;
+}
+
+.customer-info {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.customer-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: var(--green-50);
+  border-radius: 8px;
+  border: 1px solid var(--green-100);
+  color: var(--green-700);
+}
+
+.customer-row .label {
+  font-size: 12px;
+  color: var(--green-600);
+  font-weight: 600;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.customer-row .value {
+  font-size: 15px;
+  color: var(--green-900);
+  font-weight: 500;
+}
+
+.description-section {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 2px solid var(--green-100);
+}
+
+.description-section h4 {
+  color: var(--green-800);
+  margin: 0 0 15px 0;
+  font-size: 16px;
+}
+
+.description-content {
+  background: var(--green-50);
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid var(--green-100);
+  color: var(--green-900);
+  line-height: 1.7;
+  white-space: pre-wrap;
+  min-height: 100px;
+}
+
+.edit-form {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.edit-form .form-group {
+  margin-bottom: 20px;
+}
+
+.edit-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--green-800);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.edit-form .form-control {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid var(--green-200);
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  background: white;
+  color: var(--green-900);
+}
+
+.edit-form .form-control:focus {
+  outline: none;
+  border-color: var(--green-500);
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
+}
+
+.form-control-inline {
+  padding: 8px 12px;
+  border: 2px solid var(--green-200);
+  border-radius: 6px;
+  font-size: 14px;
+  background: white;
+  color: var(--green-900);
+  font-weight: 600;
+}
+
+.form-control-inline:focus {
+  outline: none;
+  border-color: var(--green-500);
+}
+
+textarea.form-control {
+  resize: vertical;
+  font-family: inherit;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 2px solid var(--green-100);
+}
+
+.btn-save {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, var(--green-600) 0%, var(--green-500) 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.2);
+}
+
+.btn-save:hover {
+  background: linear-gradient(135deg, var(--green-700) 0%, var(--green-600) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(34, 197, 94, 0.3);
+}
